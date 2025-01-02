@@ -23,7 +23,12 @@ body{
     margin-top: 10px;
 }
 .day{
-    width: 500px;
+    @media screen and (max-width: 500px){
+        width: 90%;
+    }
+    @media screen and (min-width: 500px){
+        width: 500px;
+    }
     height: 200px;
     padding: 10px;
     display: flex;

@@ -1,5 +1,10 @@
 .markdown-body{
-    width: 50vw;
+    @media screen and (max-width: 500px){
+        width: 90%;
+    }
+    @media screen and (min-width: 500px){
+        width: 50vw;
+    }
 }
 
 @font-face {

@@ -6,10 +6,7 @@
 
 ## 명령문
 
-**블록문**
-
-if, while, for등과 같이 자주 쓰는 가장 기본적인 명령문
-
+**블록문** : if, while, for등과 같이 자주 쓰는 가장 기본적인 명령문
 ```js
 if(true){
     console.log(asdf)
@@ -18,7 +15,7 @@ if(true){
 ```
 ---
 ## 조건문
-for, if, switch 문은 다 알거고...
+if, switch 문은 다 알거고...
 
 **throw**<br>
 예외처리를 할때 사용하는 구문, 말 그대로 뭐든지 던져서 보여줄수 있음
@@ -57,23 +54,23 @@ try{
 try..catch문 뒤에 붙으면서 그것이 무엇이든지 무조건 실행하는 제어문
 ```js
 try {
-  console.log('Some Try Block!');
+    console.log('Some Try Block!');
 } catch (e) {
-  console.log('Some Catch Block!');
+    console.log('Some Catch Block!');
 } finally {
-  console.log('Some Finally Block!');
+    console.log('Some Finally Block!');
 } //이러면 try문과 finally문만 실행된다.
 ```
 **무조건 실행이기 때문에 기존의 값을 덮어쓰는 경우도 있다.**
 ```js
 function fn() {
-  try {
-    return 0;
-  } catch (e) {
-    return 1;
-  } finally {
-    return 2;
-  }
+    try {
+        return 0;
+    } catch (e) {
+        return 1;
+    } finally {
+        return 2;
+    }
 }
 
 console.log(fn());
